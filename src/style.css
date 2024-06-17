@@ -17,7 +17,7 @@ body {
   grid-template-rows: 1fr 6fr;
   height: 100vh;
 }
-
+/*   page title */
 .top {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
@@ -25,10 +25,11 @@ body {
   color: rgb(255, 255, 255);
   font-size: 2.5em;
 }
+/*   side bar */
 .side {
   grid-column: 1 / 2;
   grid-row: 2 / 4;
-  background-color: #B083B0;
+  background-color: rgb(176, 131, 176);
   color: rgb(255, 255, 255);
   font-size: 1.5em;
 
@@ -40,6 +41,7 @@ body {
   justify-content: flex-start;
   flex-direction: column;
 }
+/*   main area where thee task listings reside */
 .tasks {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
@@ -49,11 +51,29 @@ body {
   #D1B0D2 -- color for the outline
   #C094BD --- color for highlight? */
 }
-
+/* top folder in the sidebar */
 .sidebar-task-folder {
-  padding: 3px;
+  padding: 5px 10px;
+}
+/* themed projects in the sidebar */
+.mini-sidebar-task-folder {
+  padding: 5px 10px 5px 20px;
+  color: rgb(209, 176, 210);
 }
 
-.mini-sidebar-task-folder {
-  padding: 6px 3px 3px 3px;
+/*   css for the task listing in the main area */
+.task-listing {
+  background-color: rgb(229, 199, 229);
+  color: rgb(91, 59, 92);
+  border:1px solid rgb(192, 148, 189);
+  border-radius: 5px;
+  margin: 8px;
+}
+
+.task-listing-title {
+  font-size: 1.2em;
+}
+
+.task-listing-description {
+  font-size: 0.9em;
 }

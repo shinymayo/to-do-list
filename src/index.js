@@ -9,6 +9,7 @@ import Data from "./data.xml";
 import Notes from "./data.csv";
 
 import createTaskFolders from "./taskFolders";
+import createDefaultTask from "./taskExample";
 
 // function component() {
 //   const element = document.createElement("div");
@@ -53,8 +54,8 @@ function createPageItems() {
     //  tasks div
     const tasksDiv = document.createElement("div");
     tasksDiv.classList.add("tasks");
-    tasksDiv.textContent = "tasks will be displayed here";
     mainDiv.appendChild(tasksDiv);
+    createDefaultTask();
 }
 
 document.body.appendChild(createPageItems());
