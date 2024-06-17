@@ -8,6 +8,8 @@ import Icon from './icon.png';
 import Data from "./data.xml";
 import Notes from "./data.csv";
 
+import createTaskFolders from "./taskFolders";
+
 // function component() {
 //   const element = document.createElement("div");
 
@@ -30,7 +32,6 @@ import Notes from "./data.csv";
 // document.body.appendChild(component());
 
 function createPageItems() {
-    // const bodyHTML = document.getElementsByTagName("body");
     // main div
     const mainDiv = document.createElement("div");
     mainDiv.classList.add("page");
@@ -47,12 +48,13 @@ function createPageItems() {
     sideDiv.classList.add("side");
     sideDiv.textContent = "Projects";
     mainDiv.appendChild(sideDiv);
+    createTaskFolders();
 
-    // main area div
-    const mainAreaDiv = document.createElement("div");
-    mainAreaDiv.classList.add("main-area");
-    mainAreaDiv.textContent = ("tasks will be displayed here");
-    mainDiv.appendChild(mainAreaDiv);
+    //  tasks div
+    const tasksDiv = document.createElement("div");
+    tasksDiv.classList.add("tasks");
+    tasksDiv.textContent = "tasks will be displayed here";
+    mainDiv.appendChild(tasksDiv);
 }
 
 document.body.appendChild(createPageItems());

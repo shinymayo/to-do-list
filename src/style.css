@@ -5,11 +5,8 @@
   font-weight: 600;
   font-style: normal;
 }
-
-.hello {
-    color: blue;
-    font-family: 'MyFont';
-    background: url('./icon.png');
+body {
+  margin: 0;
 }
 
 .page {
@@ -21,17 +18,24 @@
 }
 
 .top {
-  border: solid 1px blue;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
+  background-color: rgb(128, 76, 130);
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
 }
 .side {
-  border: solid 1px sandybrown;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
+  background-color: #B083B0;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
 }
-.main-area {
-  border: 1px solid seagreen;
+.tasks {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
+  background-color: rgb(237, 215, 237);
+  /* #2C1E25 --- can be the color for the text
+  #D1B0D2 -- color for the outline
+  #C094BD --- color for highlight? */
 }
