@@ -46,7 +46,7 @@ function createPageItems() {
     // side div
     const sideDiv = document.createElement("div");
     sideDiv.classList.add("side");
-    sideDiv.textContent = "Projects";
+    // sideDiv.textContent = "Projects";
     mainDiv.appendChild(sideDiv);
     createTaskFolders();
 

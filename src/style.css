@@ -14,7 +14,8 @@ body {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 6fr;
+  height: 100vh;
 }
 
 .top {
@@ -30,12 +31,29 @@ body {
   background-color: #B083B0;
   color: rgb(255, 255, 255);
   font-size: 1.5em;
+
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: space-around; */
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .tasks {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
   background-color: rgb(237, 215, 237);
+  color: blue;
   /* #2C1E25 --- can be the color for the text
   #D1B0D2 -- color for the outline
   #C094BD --- color for highlight? */
+}
+
+.sidebar-task-folder {
+  padding: 3px;
+}
+
+.mini-sidebar-task-folder {
+  padding: 6px 3px 3px 3px;
 }
