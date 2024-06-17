@@ -11,3 +11,27 @@
     font-family: 'MyFont';
     background: url('./icon.png');
 }
+
+.page {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.top {
+  border: solid 1px blue;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+.side {
+  border: solid 1px sandybrown;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+.main-area {
+  border: 1px solid seagreen;
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
