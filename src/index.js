@@ -2,11 +2,6 @@
 import _ from "lodash";
 // some style
 import './style.css';
-// image
-import Icon from './icon.png';
-// data
-import Data from "./data.xml";
-import Notes from "./data.csv";
 
 import createTaskFolders from "./taskFolders";
 import createDefaultTask from "./taskExample";
