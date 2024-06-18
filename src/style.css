@@ -24,6 +24,10 @@ body {
   background-color: rgb(128, 76, 130);
   color: rgb(255, 255, 255);
   font-size: 2.5em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 /*   side bar */
 .side {
@@ -46,7 +50,6 @@ body {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
   background-color: rgb(237, 215, 237);
-  color: blue;
   /* #2C1E25 --- can be the color for the text
   #D1B0D2 -- color for the outline
   #C094BD --- color for highlight? */
@@ -75,7 +78,8 @@ body {
   margin: 15px 5px 5px 10px;
 }
 
-.task-listing-description {
+.task-listing-description,
+.due-date {
   font-size: 0.9em;
   margin: 5px 10px;
 }
@@ -104,4 +108,8 @@ body {
 .add-new-button:hover {
   background-color: rgb(237, 215, 237);
   color: rgb(192, 148, 189);
+}
+
+.test {
+  height: 20px;
 }
