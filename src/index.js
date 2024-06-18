@@ -81,7 +81,24 @@ function createPageItems() {
     taskDescriptionInput.setAttribute("name", "description");
     popupForm.appendChild(taskDescriptionInput);
     // const taskDueDate
+    const taskDueDateLabel = document.createElement("label");
+    taskDueDateLabel.setAttribute("for", "due-date");
+    taskDueDateLabel.classList.add("form-label");
+    taskDescriptionLabel.textContent = "Due Date:";
+    popupForm.appendChild(taskDueDateLabel);
+    // input field for due date
+    const taskDueDateInput = document.createElement("input");
+    taskDueDateInput.classList.add("form-input");
+    taskDueDateInput.setAttribute("type", "datetime-local");
+    taskDueDateInput.setAttribute("id", "due-date");
+    taskDescriptionInput.setAttribute("name", "due-date");
+    popupForm.appendChild(taskDueDateInput);
     // const taskPriority
+    const taskPriorityLabel = document.createElement("label");
+    taskPriorityLabel.setAttribute("for", "priority-picker");
+    taskPriorityLabel.classList.add("form-label");
+    taskPriorityLabel.textContent = "Choose priority:";
+    popupForm.appendChild(taskPriorityLabel);
     // const addTaskButton
 
 
