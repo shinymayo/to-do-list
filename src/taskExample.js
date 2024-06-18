@@ -10,16 +10,19 @@ function createDefaultTask() {
     taskBox.classList.add("task-listing");
     taskBox.classList.add("priority-medium");
     taskListingArea.appendChild(taskBox);
+    // div for title and description
+    const infoDiv = document.createElement("div");
+    taskBox.appendChild(infoDiv);
     // title
     const title = document.createElement("p");
     title.textContent = "do the dishes";
     title.classList.add("task-listing-title");
-    taskBox.appendChild(title);
+    infoDiv.appendChild(title);
     // description
     const description = document.createElement("p");
     description.textContent = "kitchen, after dinner";
     description.classList.add("task-listing-description");
-    taskBox.appendChild(description);
+    infoDiv.appendChild(description);
 
 
     //create div for icons and edits
@@ -40,10 +43,12 @@ function createDefaultTask() {
     // create delete icon 
     const editIcon = new Image();
     editIcon.src = Edit;
+    editIcon.classList.add("eighteen-px-size");
     iconDiv.appendChild(editIcon);
     // create edit icon
     const deleteIcon = new Image();
     deleteIcon.src = Delete;
+    deleteIcon.classList.add("eighteen-px-size");
     iconDiv.appendChild(deleteIcon);
 }
 
