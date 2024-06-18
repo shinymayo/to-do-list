@@ -1,12 +1,11 @@
 @font-face {
-  font-family: 'MyFont';
-  src: url('./font-exampl2.woff2') format('woff2'),
-    url('./font-example.woff') format('woff');
-  font-weight: 600;
+  font-family: 'Roboto';
+  src: url('./Roboto-Regular.ttf') format(ttf);
   font-style: normal;
 }
 body {
   margin: 0;
+  font-family: 'Roboto', 'Sans serif';
 }
 
 .page {
