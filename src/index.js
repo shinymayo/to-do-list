@@ -44,6 +44,12 @@ function createPageItems() {
     topDiv.textContent = "To Do List";
     mainDiv.appendChild(topDiv);
 
+    // add new button
+    const addNewButton = document.createElement("button");
+    addNewButton.classList.add("add-new-button");
+    addNewButton.textContent = "ADD TASK";
+    topDiv.appendChild(addNewButton);
+
     // side div
     const sideDiv = document.createElement("div");
     sideDiv.classList.add("side");

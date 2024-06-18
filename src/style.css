@@ -72,8 +72,36 @@ body {
 
 .task-listing-title {
   font-size: 1.2em;
+  margin: 15px 5px 5px 10px;
 }
 
 .task-listing-description {
   font-size: 0.9em;
+  margin: 5px 10px;
+}
+
+/* changing priority level */
+.task-listing.priority-high {
+  border-left: 5px solid crimson;
+}
+
+.task-listing.priority-medium {
+  border-left: 5px solid orange;
+}
+
+.task-listing.priority-low {
+  border-left: 5px solid seagreen;
+}
+
+.add-new-button {
+  background-color: rgb(192, 148, 189);
+  color: rgb(237, 215, 237);
+  padding: 10px;
+  font-size: 0.5em;
+  border: 2px solid rgb(229, 199, 229);
+  border-radius: 7px;
+}
+.add-new-button:hover {
+  background-color: rgb(237, 215, 237);
+  color: rgb(192, 148, 189);
 }
