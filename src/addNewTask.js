@@ -3,7 +3,6 @@ function addNewTask() {
     const overlay = document.getElementById("popupOverlay");
     overlay.classList.toggle("show");
 
-    alert("clicked!");
 }
 
 export default addNewTask;

@@ -126,7 +126,7 @@ function createPageItems() {
   // const submit button
   const taskSubmitButton = document.createElement("button");
   taskSubmitButton.setAttribute("type", "submit");
-  taskSubmitButton.setAttribute("id", "submit-button");
+  taskSubmitButton.setAttribute("id", "button-submit");
   taskSubmitButton.textContent = "DONE";
   taskSubmitButton.addEventListener("click", addNewTask);
   popupForm.appendChild(taskSubmitButton);
