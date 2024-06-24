@@ -7,7 +7,7 @@ function addNewTask() {
 
 //   and be able to store it locally and for it to
 
-//   be moved to different categories. 
+//   be moved to different categories/ arrays.
 }
 
 export default addNewTask;
