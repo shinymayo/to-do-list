@@ -1,8 +1,13 @@
 function addNewTask() {
-    // needs to show a pop-up box to fill in
-    const overlay = document.getElementById("popupOverlay");
-    overlay.classList.toggle("show");
+//   needs to take info from the form
 
+//   and create a new task with it in the manner
+
+//   how the taskExample.js does. So an object 
+
+//   and be able to store it locally and for it to
+
+//   be moved to different categories. 
 }
 
 export default addNewTask;

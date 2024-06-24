@@ -5,6 +5,7 @@ import './style.css';
 
 import createTaskFolders from "./taskFolders";
 import createDefaultTask from "./taskExample";
+import showNewTaskForm from "./showNewTaskForm";
 import addNewTask from "./addNewTask";
 
 // function component() {
@@ -140,7 +141,7 @@ function createPageItems() {
   const addNewButton = document.createElement("button");
   addNewButton.classList.add("add-new-button");
   addNewButton.textContent = "ADD TASK";
-  addNewButton.addEventListener("click", addNewTask);
+  addNewButton.addEventListener("click", showNewTaskForm);
   topDiv.appendChild(addNewButton);
 
   // side div
