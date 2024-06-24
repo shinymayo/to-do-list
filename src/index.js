@@ -73,25 +73,25 @@ function createPageItems() {
   taskDescriptionLabel.textContent = "Description:";
   popupForm.appendChild(taskDescriptionLabel);
   // input field for description
-  const taskDescriptionInput = document.createElement("input");
-  taskDescriptionInput.classList.add("form-input");
-  taskDescriptionInput.setAttribute("type", "text");
-  taskDescriptionInput.setAttribute("placeholder", "Type description here");
-  taskDescriptionInput.setAttribute("id", "description");
-  taskDescriptionInput.setAttribute("name", "description");
-  popupForm.appendChild(taskDescriptionInput);
+  const taskDescriptionTextArea = document.createElement("textarea");
+  taskDescriptionTextArea.classList.add("form-input");
+  taskDescriptionTextArea.setAttribute("rows", "10");
+  taskDescriptionTextArea.setAttribute("cols", "30");
+  taskDescriptionTextArea.setAttribute("id", "description");
+  taskDescriptionTextArea.setAttribute("name", "description");
+  popupForm.appendChild(taskDescriptionTextArea);
   // const taskDueDate
   const taskDueDateLabel = document.createElement("label");
   taskDueDateLabel.setAttribute("for", "due-date");
   taskDueDateLabel.classList.add("form-label");
-  taskDescriptionLabel.textContent = "Due Date:";
+  taskDueDateLabel.textContent = "Due Date:";
   popupForm.appendChild(taskDueDateLabel);
   // input field for due date
   const taskDueDateInput = document.createElement("input");
   taskDueDateInput.classList.add("form-input");
   taskDueDateInput.setAttribute("type", "datetime-local");
   taskDueDateInput.setAttribute("id", "due-date");
-  taskDescriptionInput.setAttribute("name", "due-date");
+  taskDueDateInput.setAttribute("name", "due-date");
   popupForm.appendChild(taskDueDateInput);
   // const taskPriority
   const taskPriorityLabel = document.createElement("label");
@@ -100,18 +100,36 @@ function createPageItems() {
   taskPriorityLabel.textContent = "Choose priority:";
   popupForm.appendChild(taskPriorityLabel);
   // task priority input low
-  const taskPriorityInput = document.createElement("input");
-  taskPriorityInput.classList.add("form-input");
-  taskPriorityInput.classList.add("priority-low");
-  taskPriorityInput.setAttribute("type", "radio");
-  taskPriorityInput.setAttribute("value", "low");
-  taskPriorityInput.setAttribute("id", "priority-picker");
-  popupForm.appendChild(taskPriorityInput);
+  const taskPriorityInputLow = document.createElement("input");
+  taskPriorityInputLow.classList.add("form-input");
+  taskPriorityInputLow.classList.add("priority-low");
+  taskPriorityInputLow.setAttribute("type", "radio");
+  taskPriorityInputLow.setAttribute("value", "low");
+  taskPriorityInputLow.setAttribute("id", "priority-picker");
+  popupForm.appendChild(taskPriorityInputLow);
   // task priority input medium
+  const taskPriorityInputMedium = document.createElement("input");
+  taskPriorityInputMedium.classList.add("form-input");
+  taskPriorityInputMedium.classList.add("priority-medium");
+  taskPriorityInputMedium.setAttribute("type", "radio");
+  taskPriorityInputMedium.setAttribute("value", "medium");
+  taskPriorityInputMedium.setAttribute("id", "priority-picker");
+  popupForm.appendChild(taskPriorityInputMedium);
   // task priority input high
-
-  // const taskAddButton // submit button
-
+  const taskPriorityInputHigh = document.createElement("input");
+  taskPriorityInputHigh.classList.add("form-input");
+  taskPriorityInputHigh.classList.add("priority-high");
+  taskPriorityInputHigh.setAttribute("type", "radio");
+  taskPriorityInputHigh.setAttribute("value", "high");
+  taskPriorityInputHigh.setAttribute("id", "priority-picker");
+  popupForm.appendChild(taskPriorityInputHigh);
+  // const submit button
+  const taskSubmitButton = document.createElement("button");
+  taskSubmitButton.setAttribute("type", "submit");
+  taskSubmitButton.setAttribute("id", "submit-button");
+  taskSubmitButton.textContent = "DONE";
+  taskSubmitButton.addEventListener("click", addNewTask);
+  popupForm.appendChild(taskSubmitButton);
   // top div
   const topDiv = document.createElement("div");
   topDiv.classList.add("top");
